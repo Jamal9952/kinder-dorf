@@ -1,4 +1,150 @@
-.header-navbar{
-    height: 100px;
-    background-color: rgb(190, 223, 236);
+.navbar {
+  background-color: rgb(190, 223, 236);
+  display: inline-block;
 }
+.task-container{
+  background-color: #27292a;
+  margin-top: 40px;
+  width: 80%;
+  display: none;
+}
+.menu-container{
+  display: flex;
+}
+.icon-container{
+  display: flex;
+  align-items: center;
+}
+.mobile-wish-list{
+  width: 30px;
+  /* display: inline-block; */
+}
+.close-navbar{
+  width: 30px;
+  /* display: inline-block; */
+}
+.navlink-list {
+  display: flex;
+  margin-left: -25px;
+}
+.navlink-list li,
+a {
+  list-style-type: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.arrow-down{
+  font-size: 10px;
+}
+.navlink-list li a {
+  padding: 15px 13px;
+  text-decoration: none;
+}
+
+/* .navlink-list li:not(:first-child){
+  padding-top: 18px;
+} */
+
+.navlink-list li a .cool-sticker-rot:hover .cool-sticker {
+  transform: none;
+}
+
+.cool-sticker {
+  background-color: #bccd65;
+  padding: 2px;
+  color: #fff;
+  margin-left: 18px;
+  margin-top: -38px;
+  display: block;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 10px;
+  border-radius: 3px;
+  transform: rotate(-12deg);
+}
+
+/* Dropdown styling starts here */
+
+.dropdown {
+  position: relative;
+}
+.dropdown-list {
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width:200px;
+  left: 0;
+  margin-top: 13px;
+  background-color: #fff;
+  box-shadow: 0 20px 20px rgb(0 0 0 / 10%);
+  padding: 40px;
+  z-index: 1;
+}
+
+.dropdown-head {
+  background-color: rgb(86, 155, 86);
+  color: black;
+}
+.dropdown-content li {
+  padding: 7px 0;
+  color: #666;
+  transition: all 0.2s ease 0s;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 980px) {
+  .header{
+    position: fixed;
+  }
+  .cool-sticker{
+    display: none;
+  }
+  .navlink-list{
+    flex-direction: column;
+  }
+  .navbar{
+    /* display: none; */
+    width: 30%;
+    height: 100vh;
+    background-color: #3e3f40;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    align-items: center;
+
+    /* transform: translateX(-100%); */
+    transition: all 0.5s;
+
+    /* opacity: -10;
+    visibility: hidden;
+    pointer-events: none; */
+   }
+  .navbarActive{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translateX(0) ; */
+    /* opacity: 1; */
+    visibility: hidden;
+    /* pointer-events: auto; */
+  }
+  .task-container{
+    display: flex;
+    justify-content: space-around;
+  }
+}  

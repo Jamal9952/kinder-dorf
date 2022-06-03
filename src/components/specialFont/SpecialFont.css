@@ -1,0 +1,28 @@
+.special-font{
+    padding: 0 50px;
+    margin: 0 0 50px 0;
+
+}
+.special-font-heading{
+    font-size: 64px;
+    font-family: cursive;
+    margin-bottom: 0;
+    /* font-family: hensa-regular!important; */
+}
+.special-font-content{
+    font-size: 18px;
+    color: #333333;
+    opacity: 0.5;
+    margin: 16px 0;
+}
+
+@media screen and (max-width: 980px){
+    .special-font-heading{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .special-font-heading{
+        font-size: 28px ;
+    }
+}

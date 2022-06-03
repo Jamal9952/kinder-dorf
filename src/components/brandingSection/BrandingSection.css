@@ -1,0 +1,24 @@
+.branding-section{
+    text-align: center;
+}
+.brand-card-container{
+    /* height: 400px; */
+    text-align: center;
+    /* margin: 0px; */
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.brand-product-container{
+    padding: 50px;
+}
+@media screen and (max-width: 980px) {
+    .brand-card-container{
+        align-items: center ;
+        /* text-align: center; */
+        flex-direction: column;
+        /* align-content: space-between; */
+    }
+    
+}

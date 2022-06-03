@@ -1,0 +1,40 @@
+.brand-logo{
+    float: left;
+    color: white;
+    font-weight: 700;
+    /* background-color: #fb6f91; */
+    display: inline-block;
+    border-radius: 60px;
+}
+.brand--name{
+    padding: 0px 20px;
+}
+/* .brand-name{
+    display: inline-block;
+    background-color: blanchedalmond;
+    width: 170px;
+} */
+.brand--img{
+    display: none ;
+}
+
+@media screen and (max-width: 980px) {
+    .brand--name{
+        display: none;
+    }
+    .brand--img{
+        float: left;
+        display:flex ;
+        /* background-color: ; */
+        width: 50px;
+    }
+    .brand--img img{
+        width: 50px;
+    }
+    .brand-logo .dashed-background{
+        display: none;
+    }
+    .brand-logo {
+        background-color: inherit;
+    }
+}

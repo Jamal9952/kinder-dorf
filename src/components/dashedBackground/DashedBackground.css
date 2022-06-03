@@ -1,0 +1,12 @@
+.dashed-background-container{
+    display: inline-block;
+    border-radius: 60px;
+    margin-left: 5px;
+}
+.dashed-background{
+    border-radius: 60px;
+    padding: 15px 17px;
+    display: inline-block;
+    outline: 2px dashed rgb(255, 255, 255);
+    outline-offset: -5px;
+}

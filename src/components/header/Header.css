@@ -1,4 +1,16 @@
 .header{
-    height: 100px;
-    background-color: pink;
+    margin: 0;
+    background-color: rgb(190, 223, 236);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.inner-header{
+    padding: 8px 40px 8px 40px;
+    min-height: 1% ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 980px) {
 }
