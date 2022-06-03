@@ -18,3 +18,17 @@
 .product-price{
     color: #81D1E5;
 }
+.product-name , .product-price{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 980px){
+    .product-card{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 598px){
+    .product-card{
+        width: 100%;
+    }
+}

@@ -1,4 +1,23 @@
 .popular-categories-section{
-    height: 550px;
-    background-color: pink;
+    background-image:url("../../assets/popularBackground.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    padding: 100px 25px;
+    text-align: center;
+}
+.category-cards-container{
+    display: flex;
+    position: relative;
+    /* text-align: center; */
+    /* height: 400px; */
+    /* text-align: center; */
+    /* margin: 0px; */
+    /* padding: 50px; */
+    /* margin-top: 50PX; */
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: space-between;
+}
+.brand-card-container{
 }

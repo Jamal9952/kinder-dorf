@@ -6,7 +6,7 @@ const SpecialFont = (props) => {
     <div className='special-font'>
           <h2 className='special-font-heading'>{props.title}</h2>
           <p className='special-font-content'>{props.desc}<br />
-{props.descSecLine}</p>
+              {props.descSecLine}</p>
     </div>
   )
 }
