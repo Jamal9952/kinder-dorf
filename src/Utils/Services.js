@@ -1,8 +1,24 @@
 import ProductImage from "../assets/productImage.jpg";
+import blueShark from "../assets/blueShark.jpg";
+import jumpSuit from "../assets/jumpSuit.jpg";
+import knitHat from "../assets/knitHat.jpg";
+import denimShorts from "../assets/denimShorts.jpg";
+import nightLamp from "../assets/nightLamp.jpg";
+
 import girlCardImage from "../assets/categoryGirls.jpg";
 import boyCardImage from "../assets/categoryBoys.jpg";
 import shoeCardImage from "../assets/categoryShoes.jpg";
 import toyCardImage from "../assets/categoryToys.jpg";
+
+import wildTshirt from "../assets/wildTshirt.jpg";
+import teddyBearHat from "../assets/teddyBearHat.jpg";
+import kittyBabySneakers from "../assets/kittyBabySneakers.jpg";
+import wheelOfFortune from "../assets/wheelOfFortune.jpg";
+import numbersPuzzle from "../assets/numbersPuzzle.jpg";
+import lightDenimDress from "../assets/lightDenimDress.jpg";
+import cottonBlouse from "../assets/cottonBlouse.jpg";
+import stuffedElephant from "../assets/stuffedElephant.jpg";
+
 export const heroButtonsData= [
     {
         text:"Baby Girl 0-3",
@@ -44,29 +60,29 @@ export const brandCardsData = [
 
 export const productCardData = [
     {
-        img:ProductImage,
-        title:"SuperStar Jersey",
-        price:"9.06"
+        img:blueShark,
+        title:"Stuffed Blue Shark",
+        price:"29.99"
     },
     {
-        img:ProductImage,
-        title:"SuperStar Jersey",
-        price:"9.06"
+        img:jumpSuit,
+        title:"Denim Jumpsuit",
+        price:"17.55"
     },
     {
-        img:ProductImage,
-        title:"SuperStar Jersey",
-        price:"9.06"
+        img:knitHat,
+        title:"Super Star Knit Hat",
+        price:"6.49"
     },
     {
-        img:ProductImage,
-        title:"SuperStar Jersey",
-        price:"9.06"
+        img:denimShorts,
+        title:"Denim Shorts",
+        price:"39.99"
     },
     {
-        img:ProductImage,
-        title:"SuperStar Jersey",
-        price:"9.06"
+        img:nightLamp,
+        title:"Giraffe Night Lamp",
+        price:"39.90"
     }
 ]
 
@@ -99,23 +115,60 @@ export const popularCategoriesData = [
 
 export const newArrivalCard = [
     {
-        img:ProductImage,
-        title:"SuperStar Jersey",
-        price:"9.06"
+        img:wildTshirt,
+        title:"Surfin' Wild T-shirt",
+        price:"24.99"
     },
     {
-        img:ProductImage,
-        title:"SuperStar Jersey",
-        price:"9.06"
+        img:teddyBearHat,
+        title:"Teddy Bear Hat",
+        price:"19.99"
     },
     {
-        img:ProductImage,
-        title:"SuperStar Jersey",
-        price:"9.06"
+        img:kittyBabySneakers,
+        title:"Kitty Baby Sneakers",
+        price:"39.99"
     },
     {
-        img:ProductImage,
-        title:"SuperStar Jersey",
-        price:"9.06"
+        img:wheelOfFortune,
+        title:"Wheel Of Fortune Game",
+        price:"39.99"
+    },
+    {
+        img:numbersPuzzle,
+        title:"Wooden Numbers Puzzle",
+        price:"39.99"
+    },
+    {
+        img:lightDenimDress,
+        title:"Light Denim Dress",
+        price:"27.00"
+    },
+    {
+        img:cottonBlouse,
+        title:"Stamped Cotton Blouse",
+        price:"39.99"
+    },
+    {
+        img:stuffedElephant,
+        title:"Stuffed Elephant",
+        price:"19.99"
     }
+]
+
+// Here is the data of main content  of Footer Section
+
+export const footerData = [
+    {
+        heading: "Information",
+        content:["About Us", "Contacts", "FAQ", "BabyStreet Shop", "Blog"]
+    },
+    {
+        heading:"Extras",
+        content:["My Account", "Wishlist", "Order Tracking", "Terms and Conditions", "Privacy Policy"]
+    },
+    {
+        heading:"Have a Question?",
+        content:["Mon. - Fri.: 09:00 - 18:30", "New Airport Road Lahore","03234455150","0423234455", "shop@kinderdorf@hotmail.de" ]
+    } 
 ]

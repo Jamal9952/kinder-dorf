@@ -1,4 +1,5 @@
 .hero-section{
+    margin: 0px;
     background-image: url("../../assets/HeroBanner.jpg");
     background-size: cover;
     background-position: center center;
@@ -24,12 +25,14 @@
     display: flex;
 }
 .search-bar{
+    /* background-color: transparent; */
     font-size: 15px;
     font-weight: 700;
     width: 100%;
     padding: 23px;
     border-radius: 50px;
     border:none;
+    opacity: 0.5;
 }
 .enter-to-search-phrase{
     font-size: 12px;

@@ -1,4 +1,39 @@
 .subscription-section{
-    height: 150px;
+    padding: 15px 25px 50px;
     background-color: #88cada;
+    display: flex;
+    
+}
+.sub-msg{
+    width: 50%;
+    padding: 35px 15px 0px;
+}
+.msg-heading{
+    color:#fff;
+    font-size: 24px;
+}
+.msg-content{
+    color:#fff;
+    font-size: 14px;
+    
+}
+.sub-form{
+    width: 50%;
+    padding: 35px 15px 0px;
+}
+.submit-email{
+    width: 40%;
+    /* height: 56px; */
+    padding: 18px;
+    border-radius: 32px;
+    position: absolute;
+}
+.submit-btn{
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    line-height: 27px;
+    left: 77%;
+    top: -1px;
 }

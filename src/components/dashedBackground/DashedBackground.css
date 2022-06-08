@@ -3,14 +3,22 @@
     border-radius: 60px;
     margin-left: 5px;
 }
+.dashed-background-container:hover{
+    background-color: #57c1db;
+}
 .dashed-background{
     border-radius: 60px;
     padding: 15px 17px;
     display: inline-block;
     outline: 2px dashed rgb(255, 255, 255);
     outline-offset: -5px;
+    cursor: pointer;
+}
+.dashed-background:hover{
+    background-color: #57c1db;
 }
 .btn-text{
-    font-size:14px ;
+    font-size:14px;
     color: white;
+    font-weight: 700;
 }

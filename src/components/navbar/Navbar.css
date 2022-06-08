@@ -28,7 +28,8 @@
   margin-left: -25px;
 }
 .navlink-list li,
-a {
+.navlink-list a {
+  display: flex;
   list-style-type: none;
   color: #ffffff;
   font-size: 16px;
@@ -41,7 +42,9 @@ a {
   padding: 15px 13px;
   text-decoration: none;
 }
-
+.shop-btn{
+  position: relative;
+}
 /* .navlink-list li:not(:first-child){
   padding-top: 18px;
 } */
@@ -62,6 +65,8 @@ a {
   line-height: 10px;
   border-radius: 3px;
   transform: rotate(-12deg);
+  position: absolute;
+  top:40px;
 }
 
 /* Dropdown styling starts here */
@@ -78,6 +83,7 @@ a {
   position: absolute;
   width:200px;
   left: 0;
+  top: 40px;
   margin-top: 13px;
   background-color: #fff;
   box-shadow: 0 20px 20px rgb(0 0 0 / 10%);
@@ -94,6 +100,7 @@ a {
   color: #666;
   transition: all 0.2s ease 0s;
   font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
 }
 

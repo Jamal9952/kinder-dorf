@@ -1,4 +1,40 @@
 .footer{
-    height: 600px;
-    background-color: rgb(177, 241, 249);
+    background-image: url("../../assets/footer-background.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.footer-nav-container{
+    text-align: center;
+    padding: 80px 20px 30px;
+}
+.footer-nav-list li{
+    display: inline-block;
+    padding:0 8px;
+    border-right: 1px white solid;
+}
+.footer-logo{
+    margin-top: 20px;
+}
+
+/* Footer Main Content Styling Starts Here */
+
+.footer-content-container{
+    padding: 20px 20px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.media-details{
+    padding: 30px 40px;
+}
+.media-link-container , .project-details{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    color: white;
+    font-size: 11px;
+}
+.project-details{
+    text-align: right;
 }

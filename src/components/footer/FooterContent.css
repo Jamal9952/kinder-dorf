@@ -1,0 +1,27 @@
+.footer-content{
+    /* margin: 0 0 50px 0; */
+    width: 25%;
+    margin:0 0 30px 0 ;
+}
+.content-heading{
+    margin: 0 0 30px;
+}
+.footer-content-list li{
+    list-style-type: none;
+    padding: 10px 0;
+    /* transition-delay: 2s; */
+}
+.footer-content-list li:hover{
+    padding-left: 5px;
+}
+.footer-content-list li a{
+    font-weight: 300;
+    color:#183a5c;
+    width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    .footer-content{
+        width: 100%;
+    }
+}
