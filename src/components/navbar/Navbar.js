@@ -1,5 +1,7 @@
-import { useState, React } from "react";
+import React from "react";
+import { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 // import DashedBackground from "../dashedBackground/DashedBackground";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -51,11 +53,11 @@ const Navbar = (props) => {
       </div> 
       {/* Mobile View Bar ends here */}
       <ul className="navlink-list">
-        <li>
-          <a href="">Home</a>
+        <li className="navlink-links">
+          <Link to="/">Home</Link>
         </li>
-        <li className="dropdown cool-sticker-rot">
-          <a href="" className="shop-btn">
+        <li className="dropdown cool-sticker-rot navlink-links">
+          <Link to="/shop" className="shop-btn">
             Shop 
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
             <span className="cool-sticker">COOL</span>
@@ -67,10 +69,10 @@ const Navbar = (props) => {
                 ))}
               </ul>
             </div> */}
-          </a>
-        </li>
-        <li className="dropdown">
-          <a href="">
+          </Link>
+        </li >
+        <li className="dropdown navlink-links">
+          <Link to="">
             Blog 
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
             <div className="dropdown-content">
@@ -81,10 +83,10 @@ const Navbar = (props) => {
                 ))}
               </ul>
             </div>
-          </a>
+          </Link>
         </li>
-        <li className="dropdown">
-          <a href="">
+        <li className="dropdown navlink-links">
+          <Link to="">
             LookBook{" "}
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
             <div className="dropdown-content">
@@ -95,10 +97,10 @@ const Navbar = (props) => {
                 ))}
               </ul>
             </div>
-          </a>
+          </Link>
         </li>
-        <li className="dropdown">
-          <a href="">
+        <li className="dropdown navlink-links">
+          <Link to="">
             Pages 
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
             <div className="dropdown-content">
@@ -109,10 +111,10 @@ const Navbar = (props) => {
                 ))}
               </ul>
             </div>
-          </a>
+          </Link>
         </li>
-        <li>
-          <a href="">Features</a>
+        <li className="navlink-links">
+          <Link to="">Features</Link>
         </li>
       </ul>
 

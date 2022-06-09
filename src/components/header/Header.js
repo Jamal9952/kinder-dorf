@@ -1,4 +1,5 @@
-import { React, useState } from "react";
+import React from "react";
+import { useState } from "react";
 import "./Header.css";
 import BrandLogo from "../brandLogo/BrandLogo";
 import Navbar from "../navbar/Navbar";
@@ -10,11 +11,11 @@ const Header = (props) => {
   return (
     <div className="header">
       <div className="inner-header">
-        <div>
+        <div className="logo-nav">
           <BrandLogo />
           <Navbar isNavExpanded= {isNavExpanded}/>
         </div>
-        <CartHolder onClick={props.onShowCart} setIsNavExpanded = {setIsNavExpanded} isNavExpanded={isNavExpanded}/>
+        <CartHolder setIsNavExpanded = {setIsNavExpanded} isNavExpanded={isNavExpanded}/>
       </div>
     </div>
   );

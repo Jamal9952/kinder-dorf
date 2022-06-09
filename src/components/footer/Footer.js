@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = (props) => {
   return (
-    <div className="footer">
+    <footer className="footer">
       {/* Footer Navigation and Logo portion Starts here  */}
       <div className="footer-nav-container">
         <ul className="footer-nav-list">
@@ -57,7 +57,7 @@ const Footer = (props) => {
           <p>KinderDorf theme by Jamal Ahmed | All rights reserved!</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

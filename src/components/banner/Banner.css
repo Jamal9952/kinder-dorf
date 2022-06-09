@@ -1,0 +1,7 @@
+.banner{
+    background-image: url("../../assets/banner.jpg");
+    /* background-color: aqua; */
+    background-position: center;
+    height: 300px;
+    margin-top: 96px;
+}

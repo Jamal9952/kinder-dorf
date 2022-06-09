@@ -4,11 +4,17 @@
     width: 100%;
     z-index: 1;
 }
+/* .logo-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
 .inner-header{
-    padding: 8px 40px 8px 40px;
+    padding: 8px 40px;
     min-height: 1% ;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 @media screen and (max-width: 980px) {

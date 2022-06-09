@@ -27,20 +27,23 @@
   display: flex;
   margin-left: -25px;
 }
-.navlink-list li,
-.navlink-list a {
+.navlink-list .navlink-links
+ {
   display: flex;
   list-style-type: none;
-  color: #ffffff;
-  font-size: 16px;
   font-weight: 700;
+  line-height: 80px;
+  height: 80px;
+  padding: 0 13px;
+}
+.navlink-list a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+
 }
 .arrow-down{
   font-size: 10px;
-}
-.navlink-list li a {
-  padding: 15px 13px;
-  text-decoration: none;
 }
 .shop-btn{
   position: relative;
@@ -77,6 +80,10 @@
 .dropdown-list {
   padding: 0;
 }
+.dropdown-list li{
+  list-style-type: none;
+  line-height: normal;
+}
 
 .dropdown-content {
   display: none;
@@ -94,6 +101,7 @@
 .dropdown-head {
   background-color: rgb(86, 155, 86);
   color: black;
+  line-height: normal;
 }
 .dropdown-content li {
   padding: 7px 0;

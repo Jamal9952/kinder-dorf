@@ -1,0 +1,16 @@
+.header-top{
+    /* display: flex; */
+    padding: 0 40px;
+    background-color: #ebf7fa;
+    
+}
+.shortcuts ul{
+    line-height: 40px;
+    display: flex;
+}
+.shortcuts ul li{
+    padding: 0 10px;
+    list-style-type: none;
+    font-size: 13px;
+    color: #3eafcb;
+}

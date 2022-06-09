@@ -1,6 +1,5 @@
 import React from "react";
 import "./CategoryCard.css";
-import cardImage from "../../assets/categoryGirls.jpg";
 
 const CategoryCard = (props) => {
   return (
