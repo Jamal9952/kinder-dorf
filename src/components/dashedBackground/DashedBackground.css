@@ -1,12 +1,14 @@
 .dashed-background-container{
     display: inline-block;
+    /* margin-left: 5px; */
     border-radius: 60px;
-    margin-left: 5px;
+    /* width: 100%; */
 }
 .dashed-background-container:hover{
     background-color: #57c1db;
 }
 .dashed-background{
+    /* width: 90%; */
     border-radius: 60px;
     padding: 15px 17px;
     display: inline-block;

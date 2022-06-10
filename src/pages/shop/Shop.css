@@ -2,3 +2,6 @@
     /* padding-top: 136px; */
     z-index: -1;
 }
+.shop-page-content{
+    display: flex;
+}

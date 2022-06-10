@@ -1,0 +1,8 @@
+.category-section{
+    /* height: 400px; */
+    padding: 0 0 0 40px;
+    background-color: #b0f2b0;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}

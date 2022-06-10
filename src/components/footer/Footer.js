@@ -54,7 +54,7 @@ const Footer = (props) => {
           </ul>
         </div>
         <div className="project-details">
-          <p>KinderDorf theme by Jamal Ahmed | All rights reserved!</p>
+          <p>KinderDorf theme by Jamal Ahmed | All rights reserved © </p>
         </div>
       </div>
     </footer>

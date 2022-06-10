@@ -172,3 +172,14 @@ export const footerData = [
         content:["Mon. - Fri.: 09:00 - 18:30", "New Airport Road Lahore","03234455150","0423234455", "shop@kinderdorf@hotmail.de" ]
     } 
 ]
+
+// Here is the data of Banner of Shop
+
+export const shopBannerData = [
+    {
+        link:"/",
+        home:"Home",
+        page:"BABYSTREET SHOP",
+        heading:"BabyStreet Shop"
+    }
+]

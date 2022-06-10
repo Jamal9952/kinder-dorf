@@ -1,5 +1,10 @@
 .sidebar-container{
-    height: 600px;
+    /* height: 600px; */
     width: 25%;
+    float: left;
     background-color: rgb(174, 173, 173);
+    padding: 0 0 40px 0;
+}
+.side-bar-head{
+    border-radius: 5px;
 }
