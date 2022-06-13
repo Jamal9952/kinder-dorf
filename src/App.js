@@ -3,6 +3,9 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Shop from "./pages/shop/Shop";
+import Blog from "./pages/blog/Blog";
+import LookBook from "./pages/LookBook/LookBook";
+import Features from "./pages/features/Features";
 
 function App() {
   return (
@@ -11,6 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/blog" element={<Blog />}/>
+          <Route path="/lookbook" element={<LookBook />} />
+          <Route path="/features" element={<Features />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -11,7 +11,7 @@ const HeroSection = (props) => {
         <h1 className="hero-heading">Find Something you Love</h1>
         {/* Search Area starts here */}
         <form className="search-form">
-          <input className="search-bar" placeholder="Search Products"></input>
+          <input className="search-bar" placeholder="Search Products..."></input>
         </form>
         <p className="enter-to-search-phrase">Type and hit Enter to Search</p>
         <p className="browse-popular-phrase">or browse popular categories</p>

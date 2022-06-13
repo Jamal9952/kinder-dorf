@@ -11,7 +11,7 @@
     /* width: 90%; */
     border-radius: 60px;
     padding: 15px 17px;
-    display: inline-block;
+    display: block;
     outline: 2px dashed rgb(255, 255, 255);
     outline-offset: -5px;
     cursor: pointer;

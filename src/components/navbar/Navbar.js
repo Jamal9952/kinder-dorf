@@ -72,7 +72,7 @@ const Navbar = (props) => {
           </Link>
         </li >
         <li className="dropdown navlink-links">
-          <Link to="">
+          <Link to="/blog">
             Blog 
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
             <div className="dropdown-content">
@@ -86,7 +86,7 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li className="dropdown navlink-links">
-          <Link to="">
+          <Link to="/lookbook">
             LookBook{" "}
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
             <div className="dropdown-content">
@@ -114,7 +114,7 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li className="navlink-links">
-          <Link to="">Features</Link>
+          <Link to="/features">Features</Link>
         </li>
       </ul>
 
