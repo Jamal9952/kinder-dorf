@@ -12,6 +12,7 @@ const HeroSection = (props) => {
         {/* Search Area starts here */}
         <form className="search-form">
           <input className="search-bar" placeholder="Search Products..."></input>
+          <button className="search-bar-button">🔎</button>
         </form>
         <p className="enter-to-search-phrase">Type and hit Enter to Search</p>
         <p className="browse-popular-phrase">or browse popular categories</p>
@@ -19,7 +20,6 @@ const HeroSection = (props) => {
         <div className="hero-button-container">
           
             {heroButtonsData.map(buttonContext => <DashedBackground className="small-button" text={buttonContext.text} color={buttonContext.color} /> )}
-          
 
           {/* <DashedBackground color='#8bcedf'>
             <div className="small-button">Baby Boy 0-3</div>

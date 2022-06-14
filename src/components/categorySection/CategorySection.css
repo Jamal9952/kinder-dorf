@@ -1,8 +1,6 @@
 .category-section{
-    width: 75%;
-    padding: 0 0 0 40px;
-    background-color: #b0f2b0;
-    display: flex;
-    position: relative;
+    background-color: aliceblue;
     justify-content: space-between;
+    position: relative;
+    display: flex;
 }

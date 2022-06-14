@@ -1,6 +1,8 @@
 import React from 'react';
 import './Sidebar.css';
 import DashedBackground from '../dashedBackground/DashedBackground';
+import ProductCard from '../productCard/ProductCard';
+import { productCardData } from '../../Utils/Services';
 
 const Sidebar = ( props) => {
   return (
@@ -24,6 +26,9 @@ const Sidebar = ( props) => {
       </div>
       <div>
       <DashedBackground color="#81d1e5" radius="5px" text="Products on Sale" width="100%" />
+      <div className='side-prod-cont'>
+      {productCardData.map(productCard => <ProductCard className="sidebar-card" img={productCard.img} title={productCard.title} price={productCard.price}/>)}
+      </div>
       </div>
     </div>
   )

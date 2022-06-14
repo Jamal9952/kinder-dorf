@@ -1,5 +1,4 @@
 .sidebar-container{
-    /* height: 600px; */
     width: 25%;
     float: left;
     background-color: rgb(236, 227, 227);
@@ -7,9 +6,6 @@
 }
 .sidebar-head{
     margin-bottom: 30px;
-}
-.product-categories{
-
 }
 .product-parents .parent-list{
     list-style-type: none;
@@ -31,4 +27,7 @@
     list-style-type: none;
     padding: 8px 0 8px 10px;
     position: relative;
+}
+.side-prod-cont{
+    width: 100%;
 }

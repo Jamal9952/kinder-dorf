@@ -56,7 +56,7 @@ const Navbar = (props) => {
         <li className="navlink-links">
           <Link to="/">Home</Link>
         </li>
-        <li className="dropdown cool-sticker-rot navlink-links">
+        <li className="cool-sticker-rot navlink-links">
           <Link to="/shop" className="shop-btn">
             Shop 
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
@@ -75,35 +75,38 @@ const Navbar = (props) => {
           <Link to="/blog">
             Blog 
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
-            <div className="dropdown-content">
-              <h4 className="dropdown-head">Categories</h4>
-              <ul className="dropdown-list">
+            {/* <div className="dropdown-content"> */}
+              {/* <h4 className="dropdown-head">Categories</h4> */}
+              {/* <ul className="dropdown-list">
                 {categories.map((category) => (
                   <li>{category}</li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </Link>
         </li>
         <li className="dropdown navlink-links">
           <Link to="/lookbook">
-            LookBook{" "}
+            LookBook
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
-            <div className="dropdown-content">
+            {/* <div className="dropdown-content">
               <h4 className="dropdown-head">Categories</h4>
               <ul className="dropdown-list">
                 {categories.map((category) => (
                   <li>{category}</li>
                 ))}
               </ul>
-            </div>
+            </div> */}
           </Link>
         </li>
-        <li className="dropdown navlink-links">
+
+        {/* SHOP LINK */}
+
+        {/* <li className="dropdown navlink-links">
           <Link to="">
-            Pages 
+            Pages  */}
             {/* <FontAwesomeIcon className="arrow-down" icon={faAngleDown} /> */}
-            <div className="dropdown-content">
+            {/* <div className="dropdown-content">
               <h4 className="dropdown-head">Categories</h4>
               <ul className="dropdown-list">
                 {categories.map((category) => (
@@ -112,7 +115,8 @@ const Navbar = (props) => {
               </ul>
             </div>
           </Link>
-        </li>
+        </li> */}
+        
         <li className="navlink-links">
           <Link to="/features">Features</Link>
         </li>

@@ -5,8 +5,9 @@ import { popularCategoriesData } from "../../Utils/Services";
 const CategorySection = () => {
   return (
     <div className="category-section">
-     {popularCategoriesData.map(cardData => <CategoryCard img={cardData.img} title={cardData.title} quantity={cardData.quantity}/> )}
-    </div>
+        {popularCategoriesData.map(cardData => <CategoryCard img={cardData.img} title={cardData.title} quantity={cardData.quantity}/> )}
+      </div>
+    
   );
 };
 

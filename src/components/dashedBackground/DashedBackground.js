@@ -1,6 +1,5 @@
 import React from "react";
 import "./DashedBackground.css";
-
 const DashedBackground = (props) => {
   return (
     <div className="dashed-background-container"  style={{ backgroundColor: `${props.color}` , borderRadius:`${props.radius}`, width:`${props.width}` }}>

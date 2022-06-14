@@ -16,7 +16,9 @@ const Shop = (props) => {
       {shopBannerData.map(data => <Banner link={data.link} home={data.home} page={data.page} heading={data.heading}/> )}
       <div className='shop-page-content'>
       <Sidebar />
+      <div className='shop-content-holder'>
       <CategorySection />
+      </div>
       </div>
       <Footer />
     </div>

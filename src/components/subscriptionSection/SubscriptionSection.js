@@ -19,4 +19,4 @@ const SubscriptionSection = () => {
   )
 }
 
-export default SubscriptionSection
+export default SubscriptionSection;
