@@ -1,7 +1,7 @@
 .sidebar-container{
     width: 25%;
     float: left;
-    background-color: rgb(236, 227, 227);
+    /* background-color: rgb(236, 227, 227); */
     padding: 0 40px 0 0;
 }
 .sidebar-head{
@@ -30,4 +30,10 @@
 }
 .side-prod-cont{
     width: 100%;
+}
+.products-on-sale , .featured-products{
+    margin-top:40px;
+}
+.side-prod-cont{
+    margin-top: 30px;
 }

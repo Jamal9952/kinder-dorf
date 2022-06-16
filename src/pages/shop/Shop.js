@@ -7,6 +7,7 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import CategorySection from '../../components/categorySection/CategorySection';
 import { shopBannerData } from '../../Utils/Services';
 import Footer from '../../components/footer/Footer';
+import FilterSection from '../../components/filterSection/FilterSection';
 
 const Shop = (props) => {
   return (
@@ -18,6 +19,7 @@ const Shop = (props) => {
       <Sidebar />
       <div className='shop-content-holder'>
       <CategorySection />
+      <FilterSection />
       </div>
       </div>
       <Footer />

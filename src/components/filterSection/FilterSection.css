@@ -1,0 +1,45 @@
+.filter-section{
+    margin:100px 0 100px 0;
+    padding: 15px 20px;
+}
+
+
+
+
+
+
+.filter-head{
+    display: flex;
+}
+.price-heading{
+    font-weight: 500;
+    font-size: 13px;
+}
+.order-sorting{
+    font-size: 13px;
+}
+
+.filter-content{
+    margin: 20px 0 0 0;
+    padding: 25px;
+    display: flex;
+    background-color: #ececec;
+}
+.brands{
+    width: 25%;
+}
+.brands-list{ 
+    /* display: flex; */
+    flex-direction: column;
+}
+.brand-btn{
+    display: inline-block;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 2em;
+    font-size: 13px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 8px 8px 0;
+}

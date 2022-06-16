@@ -24,3 +24,20 @@
     color: white;
     font-weight: 700;
 }
+
+/* Sidebar Product Cards Styling */
+.sidebar-headings{
+    background-color: #81d1e5;
+    /* width: 100%; */
+    /* margin: 40px 0 30px 0; */
+}
+.sidebar-headings .btn-text{
+    font-size: 18px;
+}
+.sidebar-headings .dashed-background{
+    border-radius: 5px;
+    cursor: context-menu;
+}
+.sidebar-headings .dashed-background:hover{
+    background-color: #81d1e5;
+} 
