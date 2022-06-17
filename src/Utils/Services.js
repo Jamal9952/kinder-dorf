@@ -183,3 +183,13 @@ export const shopBannerData = [
         heading:"BabyStreet Shop"
     }
 ]
+
+// Here is the data of Sidebar however never used yet.
+
+export const sidebarCategoriesData = [
+    {
+        parent: "Boys Clothing",
+        count:7,
+        child:["Jeans" , "Rompers & Jumpsuits" , "Sweaters"  , "Tops"]
+    }
+]

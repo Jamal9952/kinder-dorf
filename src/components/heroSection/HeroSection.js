@@ -6,7 +6,7 @@ const HeroSection = (props) => {
   return (
     <div className="hero-section">
       {/* If there is no text, header doesn't stay on it's place */}
-      .
+      
       <div className="hero-container">
         <h1 className="hero-heading">Find Something you Love</h1>
         {/* Search Area starts here */}
@@ -18,7 +18,7 @@ const HeroSection = (props) => {
         <p className="browse-popular-phrase">or browse popular categories</p>
         {/* Place Bottun here */}
         <div className="hero-button-container">
-            {heroButtonsData.map(buttonContext => <DashedBackground className="small-button" text={buttonContext.text} color={buttonContext.color} /> )}
+            {heroButtonsData.map(buttonContext => <DashedBackground className="dashed-background-container" text={buttonContext.text} color={buttonContext.color} /> )}
         </div>
       </div>
     </div>

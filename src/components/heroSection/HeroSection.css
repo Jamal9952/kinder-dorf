@@ -70,10 +70,6 @@
 .hero-button-container{
     margin-top: 35px;
 }
-.small-button{
-color: white;
-font-weight: 500;   
-}
 
 @media screen and (max-width: 680px)  {
     .hero-container{

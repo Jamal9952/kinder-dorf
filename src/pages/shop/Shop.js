@@ -21,6 +21,7 @@ const Shop = (props) => {
       <CategorySection />
       <FilterSection />
       </div>
+      
       </div>
       <Footer />
     </div>

@@ -1,15 +1,11 @@
 .filter-section{
-    margin:100px 0 100px 0;
+    margin: 50px 0 50px 0;
     padding: 15px 20px;
 }
 
-
-
-
-
-
 .filter-head{
     display: flex;
+    justify-content: space-between;
 }
 .price-heading{
     font-weight: 500;
@@ -25,8 +21,13 @@
     display: flex;
     background-color: #ececec;
 }
-.brands{
-    width: 25%;
+.brands , .ages , .colors , .sizes{
+    width: 22%;
+    margin: 0 3% 5px 0;
+}
+.filter-list-heading{
+    font-size: 12px;
+    margin: 0 4px 30px 0;
 }
 .brands-list{ 
     /* display: flex; */
@@ -42,4 +43,30 @@
     height: 30px;
     line-height: 30px;
     margin: 0 8px 8px 0;
+}
+
+.age-btn{
+    display: block;
+    font-size: 14px;
+    padding: 5px;
+}
+.color-btn{
+    background-color: black;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin: 0 8px 8px 0;
+    display: inline-block;
+}
+
+.size-btn{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0 8px 8px 0;
+    display: inline-block;
 }
