@@ -55,7 +55,6 @@ const FilterSection = () => {
                 <div className='size-btn'>X</div>
                 <div className='size-btn'>XL</div>
             </div>
-
         </div>
     </div>
   );
