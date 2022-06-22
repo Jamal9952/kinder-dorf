@@ -114,42 +114,50 @@ export const popularCategoriesData = [
 // Here is the data of product card of New Arrival Section
 
 export const newArrivalCard = [
-    {
+    {   
+        id:1,
         img:wildTshirt,
         title:"Surfin' Wild T-shirt",
         price:"24.99"
     },
     {
+        id:2,
         img:teddyBearHat,
         title:"Teddy Bear Hat",
         price:"19.99"
     },
     {
+        id:3,
         img:kittyBabySneakers,
         title:"Kitty Baby Sneakers",
         price:"39.99"
     },
     {
+        id:4,
         img:wheelOfFortune,
         title:"Wheel Of Fortune Game",
         price:"39.99"
     },
     {
+        id:5,
         img:numbersPuzzle,
         title:"Wooden Numbers Puzzle",
         price:"39.99"
     },
     {
+        id:6,
         img:lightDenimDress,
         title:"Light Denim Dress",
         price:"27.00"
     },
     {
+        id:7,
         img:cottonBlouse,
         title:"Stamped Cotton Blouse",
         price:"39.99"
     },
     {
+        id:8,
         img:stuffedElephant,
         title:"Stuffed Elephant",
         price:"19.99"

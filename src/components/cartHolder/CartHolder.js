@@ -3,10 +3,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faHeart } from "@fortawesome/free-regular-svg-icons";
 import DashedBackground from "../dashedBackground/DashedBackground";
 import "./CartHolder.css";
+import { useDispatch } from 'react-redux';
+
+import {toggle} from '../../features/ui/uiSlice'
 
 const CartHolder = (props) => {
+  const dispatch = useDispatch();
   const toggleHandler = () => {
      props.setIsNavExpanded(!props.isNavExpanded);
+  }
+  const cartToggleHandler = () => {
+    dispatch(toggle())
   }
   return (
 
@@ -18,16 +25,14 @@ const CartHolder = (props) => {
           <a className="favourite-items">
             <FontAwesomeIcon icon={faHeart} />
           </a>
-          <a className="shopping-cart" onClick={props.onClick}>
+          <a className="shopping-cart" onClick={cartToggleHandler}>
             🛒
           </a>
         </DashedBackground>
         
       {/* Mobile navbar Starts here */}
 
-
-
-
+      
       <div className="navbar-button" onClick={toggleHandler} >
         <DashedBackground color='#81d1e5'> 
           <div className="mobile-navbar" >

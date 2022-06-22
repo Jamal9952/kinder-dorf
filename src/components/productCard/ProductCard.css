@@ -18,6 +18,16 @@
 .product-price{
     color: #81D1E5;
 }
+
+.product-buy{
+    background-color: #ececec;
+    border-radius: 25%;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+
 .product-name , .product-price{
     font-size: 14px;
 }

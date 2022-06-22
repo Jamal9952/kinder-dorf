@@ -1,8 +1,18 @@
 import React from "react";
 import "./ProductCard.css";
+import { useDispatch } from 'react-redux';
+import { addToCart } from "../../features/cart/cartSlice";
 
 const ProductCard = (props) => {
-
+  const dispatch = useDispatch();
+  
+  const addToCartHandler = () => {
+    dispatch(addToCart({
+      id: props.id,
+      title: props.title,
+      price: props.price
+    }))
+  }
   return (
     <div style={{width : `${props.width}`}} className= {props.className ? props.className : "product-card" } >
       <a>
@@ -13,7 +23,9 @@ const ProductCard = (props) => {
           <span className="product-name">{props.title}</span><br/>
         </a>
         <span className="product-price">${props.price}</span>
+        <span className="product-buy" onClick={addToCartHandler}>👜</span>
       </div>
+      
     </div>
   );
 };
