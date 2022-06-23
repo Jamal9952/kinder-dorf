@@ -2,6 +2,7 @@ import React from "react";
 import "./ProductCard.css";
 import { useDispatch } from 'react-redux';
 import { addToCart } from "../../features/cart/cartSlice";
+import { faQuran } from "@fortawesome/free-solid-svg-icons";
 
 const ProductCard = (props) => {
   const dispatch = useDispatch();
@@ -10,7 +11,8 @@ const ProductCard = (props) => {
     dispatch(addToCart({
       id: props.id,
       title: props.title,
-      price: props.price
+      price: props.price,
+      quantity: 1,
     }))
   }
   return (

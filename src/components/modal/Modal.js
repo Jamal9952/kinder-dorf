@@ -8,7 +8,7 @@ const Modal = (props) => {
     dispatch(toggle());
   };
   return (
-    <div>
+    <div >
       <div
         className={props.visibility === true ? "backdrop" : "backdropHidden"}
         onClick={modalToggleHandler}
