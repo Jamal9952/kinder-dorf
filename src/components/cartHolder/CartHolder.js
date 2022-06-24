@@ -4,8 +4,8 @@ import { faUser, faHeart } from "@fortawesome/free-regular-svg-icons";
 import DashedBackground from "../dashedBackground/DashedBackground";
 import "./CartHolder.css";
 import { useDispatch } from 'react-redux';
-
 import {toggle} from '../../features/ui/uiSlice'
+import { useSelector } from "react-redux";
 
 const CartHolder = (props) => {
   const dispatch = useDispatch();
@@ -15,6 +15,8 @@ const CartHolder = (props) => {
   const cartToggleHandler = () => {
     dispatch(toggle())
   }
+
+  const batchNumber = useSelector((state)=> state.cart.totalQuantity)
   return (
 
     <div className="navbar-bar">
@@ -27,6 +29,7 @@ const CartHolder = (props) => {
           </a>
           <a className="shopping-cart" onClick={cartToggleHandler}>
             🛒
+            <span>{batchNumber}</span>
           </a>
         </DashedBackground>
         
@@ -53,9 +56,6 @@ const CartHolder = (props) => {
           </div>
         </DashedBackground>
       </div>
-
-
-      
     </div>
   );
 };

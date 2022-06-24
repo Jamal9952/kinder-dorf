@@ -1,14 +1,13 @@
 import React from "react";
 import "./ProductCard.css";
 import { useDispatch } from 'react-redux';
-import { addToCart } from "../../features/cart/cartSlice";
-import { faQuran } from "@fortawesome/free-solid-svg-icons";
+import { addItemToCart } from "../../features/cart/cartSlice";
 
 const ProductCard = (props) => {
   const dispatch = useDispatch();
   
   const addToCartHandler = () => {
-    dispatch(addToCart({
+    dispatch(addItemToCart({
       id: props.id,
       title: props.title,
       price: props.price,
