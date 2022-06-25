@@ -13,18 +13,10 @@ import Footer from '../../components/footer/Footer'
 
 
 const Home = () => {
-
   const [cartIsShown, setCartIsShown] = useState(false);
-
   const showCartHandler = () => {
     setCartIsShown(true);
-  };
-
-  const hideCartHandler = () => {
-    setCartIsShown(false);
-  };
-
-
+  }
   return (
     <div>
         {cartIsShown && <Cart onClick={showCartHandler} />}

@@ -181,7 +181,7 @@ export const footerData = [
     } 
 ]
 
-// Here is the data of Banner of Shop
+// Here is the data of Banner of Shop page
 
 export const shopBannerData = [
     {
@@ -199,5 +199,15 @@ export const sidebarCategoriesData = [
         parent: "Boys Clothing",
         count:7,
         child:["Jeans" , "Rompers & Jumpsuits" , "Sweaters"  , "Tops"]
+    }
+]
+
+// Here is the data of Banner of Checkout page
+export const checkoutBannerData = [
+    {
+        link:"/",
+        home:"Home",
+        page:"CHECKOUT",
+        heading:"Checkout"
     }
 ]

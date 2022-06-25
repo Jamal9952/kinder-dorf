@@ -7,6 +7,7 @@ const ProductCard = (props) => {
   const dispatch = useDispatch();
   
   const addToCartHandler = () => {
+    console.log("inside here");
     dispatch(addItemToCart({
       id: props.id,
       title: props.title,

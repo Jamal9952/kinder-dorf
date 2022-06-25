@@ -4,20 +4,29 @@ import "./Header.css";
 import BrandLogo from "../brandLogo/BrandLogo";
 import Navbar from "../navbar/Navbar";
 import CartHolder from "../cartHolder/CartHolder";
+import { useSelector } from "react-redux";
+import Cart from "../cart/Cart";
 
 const Header = (props) => {
-  const [isNavExpanded , setIsNavExpanded] = useState(true);
+  const [isNavExpanded, setIsNavExpanded] = useState(true);
+  const modalVisibility = useSelector((state) => state.ui.modelIsVisible);
 
   return (
-    <div className="header">
-      <div className="inner-header">
-        <div className="logo-nav">
-          <BrandLogo />
-          <Navbar isNavExpanded= {isNavExpanded}/>
+    <>
+      <Cart visibility={modalVisibility} />
+      <div className="header">
+        <div className="inner-header">
+          <div className="logo-nav">
+            <BrandLogo />
+            <Navbar isNavExpanded={isNavExpanded} />
+          </div>
+          <CartHolder
+            setIsNavExpanded={setIsNavExpanded}
+            isNavExpanded={isNavExpanded}
+          />
         </div>
-        <CartHolder setIsNavExpanded = {setIsNavExpanded} isNavExpanded={isNavExpanded}/>
       </div>
-    </div>
+    </>
   );
 };
 
