@@ -1,47 +1,38 @@
 import React from "react";
 import "./BillingDetails.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form, Button } from "react-bootstrap";
+import Cities from "../../Utils/Cities";
 
 const BillingDetails = () => {
   return (
     <div className="billing-details-container">
       <h2 className="biling-details-heading">Billing Details</h2>
-      <Form>
-      <Form.Group className="mb-3">
-          <Form.Label>First Name:</Form.Label>
-          <Form.Control type="text"  />
-        </Form.Group>
-        <Form.Group className="mb-3" >
-          <Form.Label>Last Name:</Form.Label>
-          <Form.Control type="text"  />
-        </Form.Group>
-        <Form.Group className="mb-3" >
-          <Form.Label>Address:</Form.Label>
-          <Form.Control type="text"  />
-        </Form.Group>
-        <Form.Group className="mb-3" >
-          <Form.Label>City:</Form.Label>
-          <Form.Control type="text"  />
-        </Form.Group>
-        <Form.Group className="mb-3" >
-          <Form.Label>Phone:</Form.Label>
-          <Form.Control type="number"  />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Button variant="info" type="submit">
-          Order
-        </Button>
-      </Form>
+
+     <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+
+    <label for="city">City</label>
+    <Cities />
+
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address" placeholder="Your Adress.." />
+
+    <label for="phone">Phone</label>
+    <input type="number" id="phone" name="phone" placeholder="Phone Number.."></input>
+    
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Email Address.."></input>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+    <input type="submit" value="Submit" />
+  </form>
+      
+      
     </div>
   );
 };
