@@ -26,13 +26,11 @@ const BillingDetails = () => {
     <label for="email">Email Address</label>
     <input type="email" id="email" name="email" placeholder="Email Address.."></input>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+    <label for="subject">Order Notes(OPTIONAL)</label>
+    <textarea id="subject" name="subject" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
 
     <input type="submit" value="Submit" />
   </form>
-      
-      
     </div>
   );
 };
