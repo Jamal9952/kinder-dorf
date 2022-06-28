@@ -4,6 +4,8 @@ import Header from "../../components/header/Header";
 import Banner from "./../../components/banner/Banner";
 import BillingDetails from "../../components/billingDetails/BillingDetails";
 import { checkoutBannerData } from "../../Utils/Services";
+import Footer from "../../components/footer/Footer";
+import BillingSummary from "../../components/billingSummary/BillingSummary";
 
 const Checkout = () => {
   return (
@@ -16,7 +18,11 @@ const Checkout = () => {
           page={data.page}
           heading={data.heading}
         />))}
+        <div className="checkout-content">
         <BillingDetails />
+        <BillingSummary />
+        </div>
+        <Footer />
     </div>
   );
 };

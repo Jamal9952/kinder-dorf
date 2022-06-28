@@ -9,27 +9,27 @@ const BillingDetails = () => {
 
      <form>
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required />
 
     <label for="city">City</label>
     <Cities />
 
     <label for="address">Address</label>
-    <input type="text" id="address" name="address" placeholder="Your Adress.." />
+    <input type="text" id="address" name="address" placeholder="Your Adress.." required />
 
     <label for="phone">Phone</label>
-    <input type="number" id="phone" name="phone" placeholder="Phone Number.."></input>
+    <input type="number" id="phone" name="phone" placeholder="Phone Number.." required />
     
     <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" placeholder="Email Address.."></input>
+    <input type="email" id="email" name="email" placeholder="Email Address.." required />
 
     <label for="subject">Order Notes(OPTIONAL)</label>
-    <textarea id="subject" name="subject" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+    <textarea id="subject" name="subject" placeholder="Notes about your order, e.g. special notes for delivery." />
 
-    <input type="submit" value="Submit" />
+    {/* <input type="submit" value="Submit" /> */}
   </form>
     </div>
   );

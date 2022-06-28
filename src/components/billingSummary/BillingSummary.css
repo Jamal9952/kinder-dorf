@@ -1,0 +1,51 @@
+.billing-summary-container{
+    display: inline-block;
+    margin: 0 80px 40px 0;
+    background-color: #f2f2f2;
+    width: 30%;
+    padding: 40px;
+    border-radius: 10px;
+}
+th{
+    text-align: left;
+    padding: 10px;
+    min-width: 150px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+td{
+    padding: 10px;
+    font-size: 13px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.product-title-checkout{
+    white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.total-payment-data{
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+.payment-method{
+    padding-top: 50px;
+}
+.cod-payment, .online-payment{
+    padding: 15px 0;
+    align-items: center;
+    border-bottom: 1px solid #d6d6d6;
+}
+.payment-method input[type=radio], input[type=checkbox]{
+    margin: 0 5px 0 5px;
+}
+.payment-message{
+    color: #777777;
+    margin: 13px 0;
+    padding: 8px;
+    font-size: 13px;
+}
+.terms-and-conditions{
+    margin:18px 0;
+    padding: 8px;
+}

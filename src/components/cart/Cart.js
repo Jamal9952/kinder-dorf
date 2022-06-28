@@ -9,7 +9,6 @@ import {
 } from "../../features/cart/cartSlice";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
 const Cart = (props) => {
   const cartItems = useSelector((state) => state.cart.items);
 
