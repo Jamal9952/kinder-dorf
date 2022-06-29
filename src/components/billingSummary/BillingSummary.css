@@ -18,6 +18,12 @@ td{
     font-size: 13px;
     border-bottom: 1px solid #d6d6d6;
 }
+.buy-something{
+    margin-left: 5px;
+    padding: 5px;
+    color: #6c6c6c;
+    width: 100%;
+}
 .product-title-checkout{
     white-space: nowrap; 
   overflow: hidden;

@@ -44,7 +44,7 @@ const Cart = (props) => {
           <div className="actions">
             {cartItems.length !== 0 && (
               <Link to="/checkout">
-                <button className="button">
+                <button className="button" onClick={closeCartHandler}>
                   Order
                 </button>
               </Link> 

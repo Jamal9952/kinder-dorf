@@ -21,7 +21,7 @@ const BillingDetails = () => {
     <input type="text" id="address" name="address" placeholder="Your Adress.." required />
 
     <label for="phone">Phone</label>
-    <input type="number" id="phone" name="phone" placeholder="Phone Number.." required />
+    <input noscroll type="number" id="phone" name="phone" placeholder="Phone Number.." required />
     
     <label for="email">Email Address</label>
     <input type="email" id="email" name="email" placeholder="Email Address.." required />

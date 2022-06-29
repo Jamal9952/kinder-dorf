@@ -187,8 +187,8 @@ export const shopBannerData = [
     {
         link:"/",
         home:"Home",
-        page:"BABYSTREET SHOP",
-        heading:"BabyStreet Shop"
+        page:"KINDERDORF SHOP",
+        heading:"KinderDorf Shop"
     }
 ]
 

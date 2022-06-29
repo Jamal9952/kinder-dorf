@@ -18,7 +18,6 @@ const CartHolder = (props) => {
 
   const batchNumber = useSelector((state)=> state.cart.totalQuantity)
   return (
-
     <div className="navbar-bar">
         <DashedBackground color='#81d1e5'>
           <a className="user-login">

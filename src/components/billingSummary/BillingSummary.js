@@ -18,11 +18,12 @@ const BillingSummary = (props) => {
       (previousValue, currentValue) => previousValue + currentValue,
       initialValue 
     );
-    return totalSum.toFixed(2);
+    return totalSum;
   };
   const totalPrice = findTotalPrice(cartItems);
-  const shippingPrice = 12;
+const shippingPrice = totalPrice == 0 ? 0 : 12 ;
   const grandTotal = totalPrice + shippingPrice;
+  const total = grandTotal.toFixed(2);
   console.log("Checking values", totalPrice, shippingPrice);
   return (
     <div className="billing-summary-container">
@@ -45,17 +46,18 @@ const BillingSummary = (props) => {
             ))}
           </tbody>
           <tfoot>
-            <tr>
+            {totalPrice == 0 ?<p className="buy-something">Please buy something!</p> : <tr>
               <th>Total</th>
               <td>${totalPrice}</td>
-            </tr>
+            </tr>}
+            
             <tr>
               <th>Shipping</th>
               <td>${shippingPrice}</td>
             </tr>
             <tr>
               <th>Grand Total</th>
-              <td className="total-payment-data">${grandTotal}</td>
+              <td className="total-payment-data">${total}</td>
             </tr>
           </tfoot>
         </table>
