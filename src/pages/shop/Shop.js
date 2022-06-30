@@ -10,8 +10,33 @@ import Footer from "../../components/footer/Footer";
 import FilterSection from "../../components/filterSection/FilterSection";
 import ProductCard from "../../components/productCard/ProductCard";
 import { newArrivalCard } from "../../Utils/Services";
+import { useEffect } from "react";
+
 
 const Shop = (props) => {
+  useEffect(() => {
+    getProducts();
+  }, []);
+
+  const getProducts = async () => {
+    try {
+      const response = await fetch("https://fakestoreapi.com/products");
+
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log(data);
+      return data;
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const data  = getProducts();
+  console.log(data);
+  // console.log(actualData);
   return (
     <div className="shop">
       {/* <HeaderTop /> */}
