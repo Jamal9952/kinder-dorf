@@ -10,13 +10,19 @@ import Footer from "../../components/footer/Footer";
 import FilterSection from "../../components/filterSection/FilterSection";
 import ProductCard from "../../components/productCard/ProductCard";
 import { newArrivalCard } from "../../Utils/Services";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch } from 'react-redux';
+import { fetchAllProducts } from './../../features/product/productSlice';
 
 
-const Shop = (props) => {
+const Shop = () => {
+  const dispatch = useDispatch();
   useEffect(() => {
-    getProducts();
+    dispatch(fetchAllProducts());
   }, []);
+
+  const [productData, setProductData] = useState([])
+
 
   const getProducts = async () => {
     try {
@@ -25,18 +31,14 @@ const Shop = (props) => {
       if (!response.ok) {
         throw new Error(`Error! status: ${response.status}`);
       }
-
       const data = await response.json();
+      setProductData(data);
       console.log(data);
-      return data;
     } catch (err) {
       console.log(err);
     }
   };
 
-  const data  = getProducts();
-  console.log(data);
-  // console.log(actualData);
   return (
     <div className="shop">
       {/* <HeaderTop /> */}
@@ -56,10 +58,10 @@ const Shop = (props) => {
           <FilterSection />
 
           {/* RENDERING PRODUCTS HERE FROM NEWARRIVAL SECTION API */}
-          {newArrivalCard.map((product) => (
+          {productData.map((product) => (
             <ProductCard
               id={product.id}
-              img={product.img}
+              img={product.image}
               title={product.title}
               price={product.price}
             />
