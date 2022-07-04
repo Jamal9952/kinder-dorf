@@ -22,6 +22,7 @@ const productSlice = createSlice({
   initialState: {
     entities: [],
     loading: "idle",
+    isLoading: false,
     currentRequestId: undefined,
     error: null,
   },
@@ -32,6 +33,7 @@ const productSlice = createSlice({
         if (state.loading === "idle") {
           state.loading = "pending";
           //   state.currentRequestId = action.payload.meta.requestId;
+          state.isLoading = true;
         }
       })
       .addCase(fetchAllProducts.fulfilled, (state, action) => {
@@ -40,8 +42,10 @@ const productSlice = createSlice({
           state.loading === "pending"
           //   state.currentRequestId === requestId
         ) {
+            const data = action.payload;
           state.loading = "idle";
-          state.entities.push(action.payload);
+          state.isLoading = false;
+          state.entities.push(...data);
           state.currentRequestId = undefined;
         }
       })
@@ -52,6 +56,7 @@ const productSlice = createSlice({
           //   state.currentRequestId === requestId
         ) {
           state.loading = "idle";
+          state.isLoading = false;
           state.error = action.error;
           state.currentRequestId = undefined;
         }

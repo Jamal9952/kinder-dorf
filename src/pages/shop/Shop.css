@@ -12,3 +12,9 @@
     /* background-color: #b0f2b0; */
     float: right;
 }
+.shop-products-loading{
+    font-size: 30px;
+    padding: 100px;
+    max-width: 100px;
+    margin: auto;
+}

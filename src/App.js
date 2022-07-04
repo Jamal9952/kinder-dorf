@@ -19,6 +19,7 @@ function App() {
           <Route path="/lookbook" element={<LookBook />} />
           <Route path="/features" element={<Features />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/shop/:title" element={<Shop/>} />
         </Routes>
       </BrowserRouter>
     </>

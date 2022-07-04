@@ -30,6 +30,11 @@
     font-family: cursive;
     font-size: 40px;
 }
+.category-title:hover{
+    color: gray;
+    border: 5px solid wheat;
+    border-radius: 5%;
+}
 .category-quantity{
     font-size: 13px;
 }

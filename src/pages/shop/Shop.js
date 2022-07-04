@@ -11,34 +11,41 @@ import FilterSection from "../../components/filterSection/FilterSection";
 import ProductCard from "../../components/productCard/ProductCard";
 import { newArrivalCard } from "../../Utils/Services";
 import { useEffect, useState } from "react";
-import { useDispatch } from 'react-redux';
-import { fetchAllProducts } from './../../features/product/productSlice';
-
+import { useDispatch, useSelector } from "react-redux";
+import { fetchAllProducts } from "./../../features/product/productSlice";
+import { resolvePath, useParams } from "react-router-dom";
 
 const Shop = () => {
   const dispatch = useDispatch();
+  const params = useParams();
+
   useEffect(() => {
     dispatch(fetchAllProducts());
   }, []);
 
-  const [productData, setProductData] = useState([])
-
-
-  const getProducts = async () => {
-    try {
-      const response = await fetch("https://fakestoreapi.com/products");
-
-      if (!response.ok) {
-        throw new Error(`Error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      setProductData(data);
-      console.log(data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
+  const productData = useSelector((state) => state.product.entities);
+  const loading = useSelector((state) => state.product.isLoading);
+console.log(loading);
+  const filterAgainst = params.title;
+  let filterBy = ``;
+  switch (filterAgainst) {
+    case "girls":
+      filterBy = `women's clothing`;
+      break;
+    case "boys":
+      filterBy = `men's clothing`;
+      break;
+    case "shoes":
+      filterBy = `jewelery`;
+      break;
+    case "toys":
+      filterBy = `electronics`;
+      break;
+    default:
+      console.log("all products");
+  }
+  const relatedData = productData.filter((item) => item.category == filterBy);
+  const showProducts = relatedData != 0 ? relatedData : productData;
   return (
     <div className="shop">
       {/* <HeaderTop /> */}
@@ -56,9 +63,10 @@ const Shop = () => {
         <div className="shop-content-holder">
           <CategorySection />
           <FilterSection />
+          {filterBy ? <h1>{filterBy}</h1> : <h1>Products</h1>}
 
-          {/* RENDERING PRODUCTS HERE FROM NEWARRIVAL SECTION API */}
-          {productData.map((product) => (
+          {loading === true ? <p className="shop-products-loading">Loading...</p> : ''}
+          {showProducts.map((product) => (
             <ProductCard
               id={product.id}
               img={product.image}
